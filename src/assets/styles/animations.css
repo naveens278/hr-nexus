@@ -1,0 +1,973 @@
+/* ============================================
+   MODERN GLASSMORPHISM & 3D ANIMATION LIBRARY
+   HR-NEXUS Animated Platform - Enhanced Edition
+   ============================================ */
+
+/* ============================================
+   GLASSMORPHISM - SMOOTH TRANSPARENCY & BLUR
+   ============================================ */
+
+/* Smooth Glassmorphic Fade In */
+@keyframes glassIn {
+  from {
+    opacity: 0;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+  }
+  to {
+    opacity: 1;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+}
+
+/* Glassmorphic Slide Down */
+@keyframes glassSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.98);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+}
+
+/* Glassmorphic Slide Up */
+@keyframes glassSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.98);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+}
+
+/* Glassmorphic Slide Left */
+@keyframes glassSlideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px) skewY(2deg);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) skewY(0deg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+}
+
+/* Glassmorphic Slide Right */
+@keyframes glassSlideRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px) skewY(-2deg);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) skewY(0deg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+}
+
+/* Glassmorphic Scale In */
+@keyframes glassScaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+}
+
+/* Glassmorphic Blur Pulse */
+@keyframes glassBlurPulse {
+  0%, 100% {
+    opacity: 1;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  50% {
+    opacity: 0.8;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+  }
+}
+
+/* Frosted Glass Effect */
+@keyframes frostedGlassAppear {
+  from {
+    opacity: 0;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(0px) saturate(0%);
+    -webkit-backdrop-filter: blur(0px) saturate(0%);
+    border-color: rgba(255, 255, 255, 0);
+  }
+  to {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px) saturate(100%);
+    -webkit-backdrop-filter: blur(12px) saturate(100%);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* Glassmorphic Glow Pulse */
+@keyframes glassGlowPulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.2), 
+                inset 0 0 20px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(59, 130, 246, 0.4),
+                inset 0 0 30px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+}
+
+/* Smooth Transparency Transition */
+@keyframes smoothFadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ============================================
+   3D EFFECTS - PERSPECTIVE & DEPTH
+   ============================================ */
+
+/* 3D Flip X */
+@keyframes flip3DX {
+  0% {
+    transform: perspective(1000px) rotateX(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateX(360deg);
+  }
+}
+
+/* 3D Flip Y */
+@keyframes flip3DY {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+/* 3D Flip Card */
+@keyframes flip3DCard {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: perspective(1000px) rotateY(180deg);
+    opacity: 1;
+  }
+}
+
+/* 3D Cube Rotation */
+@keyframes cube3DRotate {
+  0% {
+    transform: perspective(1200px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+    transform: perspective(1200px) rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+
+/* 3D Depth Appear */
+@keyframes depth3DAppear {
+  from {
+    opacity: 0;
+    transform: perspective(1000px) translateZ(-500px) rotateX(45deg) rotateY(45deg);
+  }
+  to {
+    opacity: 1;
+    transform: perspective(1000px) translateZ(0) rotateX(0deg) rotateY(0deg);
+  }
+}
+
+/* 3D Depth Slide */
+@keyframes depth3DSlide {
+  from {
+    opacity: 0;
+    transform: perspective(1500px) translateY(50px) translateZ(-300px) rotateX(30deg);
+  }
+  to {
+    opacity: 1;
+    transform: perspective(1500px) translateY(0) translateZ(0) rotateX(0deg);
+  }
+}
+
+/* 3D Layer Bounce */
+@keyframes layer3DBounce {
+  0% {
+    transform: perspective(1200px) translateZ(0) rotateX(0deg) rotateY(0deg);
+  }
+  25% {
+    transform: perspective(1200px) translateZ(100px) rotateX(10deg) rotateY(10deg);
+  }
+  50% {
+    transform: perspective(1200px) translateZ(200px) rotateX(-5deg) rotateY(-5deg);
+  }
+  75% {
+    transform: perspective(1200px) translateZ(100px) rotateX(10deg) rotateY(10deg);
+  }
+  100% {
+    transform: perspective(1200px) translateZ(0) rotateX(0deg) rotateY(0deg);
+  }
+}
+
+/* 3D Tilt Effect */
+@keyframes tilt3D {
+  0% {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(1000px) rotateX(15deg) rotateY(15deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+  }
+}
+
+/* 3D Spin & Rise */
+@keyframes spin3DRise {
+  0% {
+    opacity: 0;
+    transform: perspective(1200px) translateY(50px) rotateZ(0deg) rotateX(90deg);
+  }
+  50% {
+    opacity: 1;
+    transform: perspective(1200px) translateY(-10px) rotateZ(180deg) rotateX(45deg);
+  }
+  100% {
+    opacity: 1;
+    transform: perspective(1200px) translateY(0) rotateZ(360deg) rotateX(0deg);
+  }
+}
+
+/* 3D Fold Effect */
+@keyframes fold3D {
+  0% {
+    transform: perspective(1000px) rotateX(0deg);
+  }
+  50% {
+    transform: perspective(1000px) rotateX(-90deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateX(0deg);
+  }
+}
+
+/* 3D Depth Shadow */
+@keyframes depth3DShadow {
+  0% {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1),
+                0 0 0 rgba(59, 130, 246, 0);
+    transform: perspective(1000px) translateZ(0);
+  }
+  50% {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3),
+                0 0 30px rgba(59, 130, 246, 0.2);
+    transform: perspective(1000px) translateZ(50px);
+  }
+  100% {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1),
+                0 0 0 rgba(59, 130, 246, 0);
+    transform: perspective(1000px) translateZ(0);
+  }
+}
+
+/* 3D Perspective Entry */
+@keyframes perspective3DEnter {
+  from {
+    opacity: 0;
+    transform: perspective(2000px) translateZ(-1000px) rotateX(90deg) rotateY(45deg);
+  }
+  to {
+    opacity: 1;
+    transform: perspective(2000px) translateZ(0) rotateX(0deg) rotateY(0deg);
+  }
+}
+
+/* 3D Flip Bounce */
+@keyframes flipBounce3D {
+  0% {
+    transform: perspective(1000px) rotateY(0deg) scale(0.8);
+  }
+  50% {
+    transform: perspective(1000px) rotateY(180deg) scale(1.1);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg) scale(1);
+  }
+}
+
+/* Chart & Data Animations */
+@keyframes chartSlideUp {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes numberCounter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Form & Input Animations */
+@keyframes focusGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+  }
+}
+
+@keyframes successCheck {
+  0% {
+    transform: scale(0) rotate(-45deg);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes slideCheckmark {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Alert & Toast Animations */
+@keyframes slideInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOutTop {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes expandWidth {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+/* Button & Hover Animations */
+@keyframes buttonPress {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes buttonHover {
+  from {
+    transform: translateY(0);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  to {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* Modal & Backdrop Animations */
+@keyframes backdropFadeIn {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@keyframes modalScaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* List & Timeline Animations */
+@keyframes listItemSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes timelineFlow {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Badge & Label Animations */
+@keyframes badgePop {
+  0% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ============================================
+   GLASSMORPHISM UTILITY CLASSES
+   ============================================ */
+
+/* Glass Animation Classes */
+.animate-glass-in {
+  animation: glassIn 0.6s ease-out;
+}
+
+.animate-glass-slide-down {
+  animation: glassSlideDown 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.animate-glass-slide-up {
+  animation: glassSlideUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.animate-glass-slide-left {
+  animation: glassSlideLeft 0.6s ease-out;
+}
+
+.animate-glass-slide-right {
+  animation: glassSlideRight 0.6s ease-out;
+}
+
+.animate-glass-scale-in {
+  animation: glassScaleIn 0.5s ease-out;
+}
+
+.animate-frosted-glass {
+  animation: frostedGlassAppear 0.8s ease-out;
+}
+
+.animate-glass-blur-pulse {
+  animation: glassBlurPulse 2s ease-in-out infinite;
+}
+
+.animate-glass-glow-pulse {
+  animation: glassGlowPulse 2.5s ease-in-out infinite;
+}
+
+.animate-smooth-fade {
+  animation: smoothFadeIn 0.8s ease-out;
+}
+
+/* Glassmorphism Base Styling */
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.glassmorphism-light {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glassmorphism-dark {
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ============================================
+   3D EFFECTS UTILITY CLASSES
+   ============================================ */
+
+/* 3D Animation Classes */
+.animate-flip-3d-x {
+  animation: flip3DX 2s ease-in-out infinite;
+}
+
+.animate-flip-3d-y {
+  animation: flip3DY 2s ease-in-out infinite;
+}
+
+.animate-flip-3d-card {
+  animation: flip3DCard 1.2s ease-in-out infinite;
+}
+
+.animate-cube-3d {
+  animation: cube3DRotate 4s linear infinite;
+}
+
+.animate-depth-3d {
+  animation: depth3DAppear 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.animate-depth-3d-slide {
+  animation: depth3DSlide 0.9s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.animate-layer-3d-bounce {
+  animation: layer3DBounce 2s ease-in-out infinite;
+}
+
+.animate-tilt-3d {
+  animation: tilt3D 2s ease-in-out infinite;
+}
+
+.animate-spin-3d-rise {
+  animation: spin3DRise 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.animate-fold-3d {
+  animation: fold3D 2s ease-in-out infinite;
+}
+
+.animate-depth-3d-shadow {
+  animation: depth3DShadow 2s ease-in-out infinite;
+}
+
+.animate-perspective-3d {
+  animation: perspective3DEnter 0.9s ease-out;
+}
+
+.animate-flip-bounce-3d {
+  animation: flipBounce3D 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* 3D Perspective Base */
+.perspective-3d {
+  perspective: 1200px;
+  transform-style: preserve-3d;
+}
+
+.perspective-3d-huge {
+  perspective: 2000px;
+  transform-style: preserve-3d;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+/* ============================================
+   TRANSITION & HOVER EFFECTS
+   ============================================ */
+
+/* Modern Transitions */
+.transition-all {
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.transition-all-slow {
+  transition: all 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.transition-glass {
+  transition: backdrop-filter 0.4s ease, -webkit-backdrop-filter 0.4s ease, 
+              background 0.4s ease, box-shadow 0.4s ease;
+}
+
+.transition-3d {
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), 
+              box-shadow 0.4s ease;
+}
+
+.transition-colors {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.transition-transform {
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.transition-opacity {
+  transition: opacity 0.3s ease;
+}
+
+/* ============================================
+   GLASSMORPHISM HOVER EFFECTS
+   ============================================ */
+
+.hover-glass-lift:hover {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 40px rgba(59, 130, 246, 0.15);
+}
+
+.hover-glass-glow:hover {
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.5),
+              0 0 30px rgba(59, 130, 246, 0.2);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+.hover-glass-blur:hover {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* ============================================
+   3D HOVER EFFECTS
+   ============================================ */
+
+.hover-3d-lift:hover {
+  transform: perspective(1000px) translateZ(20px) rotateX(8deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.hover-3d-tilt:hover {
+  transform: perspective(1000px) rotateX(-5deg) rotateY(5deg) scale(1.02);
+}
+
+.hover-3d-flip:hover {
+  transform: perspective(1000px) rotateY(15deg);
+}
+
+.hover-3d-depth:hover {
+  transform: perspective(1200px) translateZ(30px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+}
+
+.hover-3d-float:hover {
+  transform: perspective(1000px) translateZ(50px) rotateX(2deg) rotateY(2deg);
+  box-shadow: 0 30px 60px rgba(59, 130, 246, 0.2);
+}
+
+/* ============================================
+   COMBINED GLASSMORPHISM + 3D
+   ============================================ */
+
+.hover-glass-3d:hover {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  transform: perspective(1000px) translateZ(15px) rotateX(-3deg) rotateY(3deg);
+  box-shadow: 0 8px 40px rgba(59, 130, 246, 0.15),
+              inset 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+/* ============================================
+   FOCUS STATES & INTERACTIVE ELEMENTS
+   ============================================ */
+
+.focus-ring:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2),
+              0 0 0 6px rgba(59, 130, 246, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.focus-glass:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: inset 0 0 20px rgba(59, 130, 246, 0.1);
+}
+
+.focus-3d:focus {
+  outline: none;
+  transform: perspective(1000px) translateZ(10px);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2),
+              0 8px 24px rgba(59, 130, 246, 0.3);
+}
+
+/* ============================================
+   SKELETON LOADER & LOADING STATES
+   ============================================ */
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0,
+    rgba(255, 255, 255, 0.15) 20%,
+    rgba(255, 255, 255, 0.3) 60%,
+    rgba(255, 255, 255, 0)
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.skeleton-glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  animation: glassBlurPulse 2s ease-in-out infinite;
+}
+
+/* ============================================
+   STATUS ANIMATIONS
+   ============================================ */
+
+.status-loading {
+  animation: glassBlurPulse 1.5s ease-in-out infinite;
+}
+
+.status-loading-3d {
+  animation: layer3DBounce 2s ease-in-out infinite;
+}
+
+.status-success {
+  animation: flipBounce3D 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.status-error {
+  animation: shake 0.4s ease-in-out;
+}
+
+.status-warning {
+  animation: glassGlowPulse 1.5s ease-in-out infinite;
+}
+
+/* ============================================
+   PAGE & CONTAINER ANIMATIONS
+   ============================================ */
+
+.page-enter {
+  animation: glassIn 0.5s ease-out;
+}
+
+.page-enter-glass {
+  animation: frostedGlassAppear 0.6s ease-out;
+}
+
+.page-enter-3d {
+  animation: depth3DAppear 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.page-exit {
+  animation: glassIn 0.4s ease-in reverse;
+}
+
+/* ============================================
+   STAGGER ANIMATIONS FOR LISTS
+   ============================================ */
+
+.list-item-stagger:nth-child(1) {
+  animation: glassSlideUp 0.5s ease-out 0.05s both;
+}
+
+.list-item-stagger:nth-child(2) {
+  animation: glassSlideUp 0.5s ease-out 0.1s both;
+}
+
+.list-item-stagger:nth-child(3) {
+  animation: glassSlideUp 0.5s ease-out 0.15s both;
+}
+
+.list-item-stagger:nth-child(4) {
+  animation: glassSlideUp 0.5s ease-out 0.2s both;
+}
+
+.list-item-stagger:nth-child(5) {
+  animation: glassSlideUp 0.5s ease-out 0.25s both;
+}
+
+.list-item-stagger:nth-child(n+6) {
+  animation: glassSlideUp 0.5s ease-out 0.3s both;
+}
+
+/* 3D Stagger */
+.list-item-3d-stagger:nth-child(1) {
+  animation: depth3DSlide 0.6s cubic-bezier(0.23, 1, 0.320, 1) 0.05s both;
+}
+
+.list-item-3d-stagger:nth-child(2) {
+  animation: depth3DSlide 0.6s cubic-bezier(0.23, 1, 0.320, 1) 0.1s both;
+}
+
+.list-item-3d-stagger:nth-child(3) {
+  animation: depth3DSlide 0.6s cubic-bezier(0.23, 1, 0.320, 1) 0.15s both;
+}
+
+.list-item-3d-stagger:nth-child(4) {
+  animation: depth3DSlide 0.6s cubic-bezier(0.23, 1, 0.320, 1) 0.2s both;
+}
+
+.list-item-3d-stagger:nth-child(n+5) {
+  animation: depth3DSlide 0.6s cubic-bezier(0.23, 1, 0.320, 1) 0.25s both;
+}
+
+/* ============================================
+   GRADIENT ANIMATIONS
+   ============================================ */
+
+.gradient-animated {
+  background: linear-gradient(
+    -45deg,
+    #ee7752,
+    #e73c7e,
+    #23a6d5,
+    #23d5ab
+  );
+  background-size: 400% 400%;
+  animation: gradient-shift 15s ease infinite;
+}
+
+.gradient-glass {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* ============================================
+   SCROLL BEHAVIOR
+   ============================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ============================================
+   ACCESSIBILITY - REDUCED MOTION
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

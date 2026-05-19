@@ -1,0 +1,328 @@
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  overflow-x: hidden;
+  animation: glassIn 0.8s ease-out;
+}
+
+/* Page Transitions */
+.page-container {
+  animation: glassSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.page-fade-in {
+  animation: smoothFadeIn 0.8s ease-out both;
+}
+
+.page-transition-enter {
+  animation: glassSlideUp 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.page-transition-exit {
+  animation: glassSlideUp 0.4s ease-in reverse;
+}
+
+/* Dashboard Container */
+.dashboard-grid {
+  animation: glassIn 0.7s ease-out;
+}
+
+.dashboard-header {
+  animation: glassSlideDown 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.dashboard-cards {
+  animation: glassIn 0.7s ease-out 0.2s both;
+}
+
+/* Card Hover Effects */
+.card {
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+}
+
+.card:hover {
+  animation: none;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  transform: perspective(1000px) translateZ(20px) translateY(-8px);
+  box-shadow: 0 12px 48px rgba(59, 130, 246, 0.2),
+              inset 0 0 20px rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.card.active {
+  background: rgba(59, 130, 246, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.3),
+              inset 0 0 20px rgba(255, 255, 255, 0.1);
+  border-color: rgba(59, 130, 246, 0.5);
+}
+
+/* Button Animations */
+.btn {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  background: rgba(59, 130, 246, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.btn:hover {
+  background: rgba(59, 130, 246, 0.3);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transform: perspective(1000px) translateY(-2px) translateZ(10px);
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.3);
+  border-color: rgba(59, 130, 246, 0.5);
+}
+
+.btn:active {
+  animation: none;
+  transform: scale(0.98);
+}
+
+/* Loading States */
+.loader {
+  animation: spin 1.5s linear infinite;
+}
+
+.loader-pulse {
+  animation: glassBlurPulse 2s ease-in-out infinite;
+}
+
+/* Smooth Scrolling */
+* {
+  scroll-behavior: smooth;
+}
+
+/* List Items */
+.list-item {
+  animation: glassSlideLeft 0.5s ease-out;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  background: rgba(255, 255, 255, 0.08);
+  border-left: 3px solid transparent;
+}
+
+.list-item:hover {
+  background: rgba(59, 130, 246, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-left-color: rgba(59, 130, 246, 0.6);
+  padding-left: 16px;
+  transform: perspective(1000px) translateZ(10px);
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Modal Animations */
+.modal-backdrop {
+  animation: none;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.modal-content {
+  animation: depth3DAppear 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/* Form Animations */
+.form-group {
+  animation: glassSlideUp 0.5s ease-out;
+}
+
+.form-group:nth-child(1) {
+  animation-delay: 0.05s;
+}
+
+.form-group:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.form-group:nth-child(3) {
+  animation-delay: 0.15s;
+}
+
+.form-group:nth-child(4) {
+  animation-delay: 0.2s;
+}
+
+.form-group:nth-child(5) {
+  animation-delay: 0.25s;
+}
+
+.form-group:nth-child(n+6) {
+  animation-delay: 0.3s;
+}
+
+/* Input Focus */
+input:focus,
+textarea:focus,
+select:focus {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15),
+              0 0 0 5px rgba(59, 130, 246, 0.5),
+              inset 0 0 15px rgba(59, 130, 246, 0.1);
+  animation: none;
+  transform: perspective(1000px) translateZ(5px);
+}
+
+/* Table Animations */
+table tbody tr {
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+table tbody tr:hover {
+  background: rgba(59, 130, 246, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transform: perspective(1000px) translateZ(10px) scale(1.01);
+  box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Chart Animations */
+.chart-container {
+  animation: depth3DAppear 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.chart-container canvas {
+  animation: depth3DSlide 0.9s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+/* Badge & Status */
+.badge {
+  animation: flipBounce3D 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  background: rgba(59, 130, 246, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.status-indicator {
+  animation: glassBlurPulse 2s ease-in-out infinite;
+}
+
+.status-success {
+  animation: flipBounce3D 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.3),
+              inset 0 0 15px rgba(255, 255, 255, 0.1);
+  background: rgba(34, 197, 94, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.status-error {
+  animation: shake 0.4s ease-in-out;
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.3),
+              inset 0 0 15px rgba(255, 255, 255, 0.1);
+  background: rgba(239, 68, 68, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.status-warning {
+  animation: glassBlurPulse 1.5s ease-in-out infinite;
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.3),
+              inset 0 0 15px rgba(255, 255, 255, 0.1);
+  background: rgba(245, 158, 11, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Text Effects */
+.text-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 6s ease infinite;
+}
+
+/* Smooth Transitions */
+.fade-in-quick {
+  animation: smoothFadeIn 0.3s ease-out;
+}
+
+.fade-in {
+  animation: smoothFadeIn 0.6s ease-out;
+}
+
+.fade-in-slow {
+  animation: smoothFadeIn 1s ease-out;
+}
+
+.slide-from-left {
+  animation: glassSlideLeft 0.6s ease-out;
+}
+
+.slide-from-right {
+  animation: glassSlideRight 0.6s ease-out;
+}
+
+.slide-from-top {
+  animation: glassSlideDown 0.6s ease-out;
+}
+
+.slide-from-bottom {
+  animation: glassSlideUp 0.6s ease-out;
+}
+
+/* 3D Transition Classes */
+.slide-3d-left {
+  animation: perspective3DEnter 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.flip-3d {
+  animation: flip3DCard 1s ease-in-out;
+}
+
+.bounce-3d {
+  animation: layer3DBounce 2s ease-in-out infinite;
+}
+
+/* Responsive Animations */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Print Styles - No Animations */
+@media print {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

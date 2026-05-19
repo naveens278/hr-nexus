@@ -1,0 +1,74 @@
+﻿[
+  {
+    "id": 3,
+    "firstName": "Gurunath",
+    "lastName": "s",
+    "email": "717823e123@kce.in.ac",
+    "phone": "9042320213",
+    "dateOfBirth": "2004-02-06T18:30:00.000Z",
+    "gender": "M",
+    "department": "Operations",
+    "POSITION": "Testing",
+    "joinDate": "2026-03-18T18:30:00.000Z",
+    "profilePicture": null,
+    "STATUS": "active",
+    "basic_salary": "100000.00",
+    "hra": "0.00",
+    "da": "0.00",
+    "position": "Testing",
+    "status": "active",
+    "salary": {
+      "basic": 100000,
+      "hra": 0,
+      "da": 0
+    }
+  },
+  {
+    "id": 2,
+    "firstName": "Murali",
+    "lastName": "R",
+    "email": "717824i604@kce.in.ac",
+    "phone": "9042320213",
+    "dateOfBirth": "2004-02-06T18:30:00.000Z",
+    "gender": "M",
+    "department": "IT",
+    "POSITION": "Testing",
+    "joinDate": "2021-01-06T18:30:00.000Z",
+    "profilePicture": null,
+    "STATUS": "active",
+    "basic_salary": "75000.00",
+    "hra": "2.00",
+    "da": "2.00",
+    "position": "Testing",
+    "status": "active",
+    "salary": {
+      "basic": 75000,
+      "hra": 2,
+      "da": 2
+    }
+  },
+  {
+    "id": 1,
+    "firstName": "Naveen",
+    "lastName": "S",
+    "email": "717824i605@kce.in.ac",
+    "phone": "09087742278",
+    "dateOfBirth": "2004-11-09T18:30:00.000Z",
+    "gender": "M",
+    "department": "HR",
+    "POSITION": "Design ",
+    "joinDate": "2021-01-04T18:30:00.000Z",
+    "profilePicture": "http://localhost:5000/uploads/profile-1-1773845959500.jpg",
+    "STATUS": "active",
+    "basic_salary": "1000000.00",
+    "hra": "2.00",
+    "da": "2.00",
+    "position": "Design ",
+    "status": "active",
+    "salary": {
+      "basic": 1000000,
+      "hra": 2,
+      "da": 2
+    }
+  }
+]

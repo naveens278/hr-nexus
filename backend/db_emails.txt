@@ -1,0 +1,12 @@
+[
+  {
+    "id": 2,
+    "firstName": "Murali",
+    "email": "717824i604@kce.in.ac"
+  },
+  {
+    "id": 7,
+    "firstName": "Naveen kumar ",
+    "email": "717824i605@kce.in.ac"
+  }
+]

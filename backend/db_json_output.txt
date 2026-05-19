@@ -1,0 +1,217 @@
+﻿{
+  "employees": [
+    {
+      "id": 1,
+      "firstName": "Naveen",
+      "lastName": "S",
+      "email": "717824i605@kce.in.ac",
+      "phone": "09087742278",
+      "dateOfBirth": "2004-11-09T18:30:00.000Z",
+      "gender": "M",
+      "department": "HR",
+      "POSITION": "Design ",
+      "joinDate": "2021-01-04T18:30:00.000Z",
+      "profilePicture": "http://localhost:5000/uploads/profile-1-1773845959500.jpg",
+      "STATUS": "active",
+      "basic_salary": "1000000.00",
+      "hra": "2.00",
+      "da": "2.00"
+    },
+    {
+      "id": 2,
+      "firstName": "Murali",
+      "lastName": "R",
+      "email": "717824i604@kce.in.ac",
+      "phone": "9042320213",
+      "dateOfBirth": "2004-02-06T18:30:00.000Z",
+      "gender": "M",
+      "department": "IT",
+      "POSITION": "Testing",
+      "joinDate": "2021-01-06T18:30:00.000Z",
+      "profilePicture": null,
+      "STATUS": "active",
+      "basic_salary": "75000.00",
+      "hra": "2.00",
+      "da": "2.00"
+    }
+  ],
+  "fields": [
+    {
+      "Field": "id",
+      "Type": "int(11)",
+      "Null": "NO",
+      "Key": "PRI",
+      "Default": null,
+      "Extra": "auto_increment"
+    },
+    {
+      "Field": "firstName",
+      "Type": "varchar(100)",
+      "Null": "NO",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "lastName",
+      "Type": "varchar(100)",
+      "Null": "NO",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "email",
+      "Type": "varchar(255)",
+      "Null": "NO",
+      "Key": "UNI",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "phone",
+      "Type": "varchar(20)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "dateOfBirth",
+      "Type": "date",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "gender",
+      "Type": "char(1)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "department",
+      "Type": "varchar(100)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "POSITION",
+      "Type": "varchar(100)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "joinDate",
+      "Type": "date",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "profilePicture",
+      "Type": "varchar(255)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "STATUS",
+      "Type": "varchar(20)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "active",
+      "Extra": ""
+    },
+    {
+      "Field": "basic_salary",
+      "Type": "decimal(10,2)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "0.00",
+      "Extra": ""
+    },
+    {
+      "Field": "hra",
+      "Type": "decimal(10,2)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "0.00",
+      "Extra": ""
+    },
+    {
+      "Field": "da",
+      "Type": "decimal(10,2)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "0.00",
+      "Extra": ""
+    }
+  ],
+  "duplicates": [],
+  "attendance": [
+    {
+      "id": 6,
+      "employeeId": 2,
+      "DATE": "2026-03-18T18:30:00.000Z",
+      "checkInTime": "2026-03-19T04:34:16.000Z",
+      "checkOutTime": "2026-03-19T06:17:51.000Z",
+      "STATUS": "checked-out",
+      "workingHours": "1.72"
+    },
+    {
+      "id": 7,
+      "employeeId": 1,
+      "DATE": "2026-03-18T18:30:00.000Z",
+      "checkInTime": "2026-03-19T04:34:17.000Z",
+      "checkOutTime": "2026-03-19T06:17:52.000Z",
+      "STATUS": "checked-out",
+      "workingHours": "1.72"
+    },
+    {
+      "id": 2,
+      "employeeId": 1,
+      "DATE": "2026-03-17T18:30:00.000Z",
+      "checkInTime": "2026-03-18T16:38:39.000Z",
+      "checkOutTime": "2026-03-18T16:40:01.000Z",
+      "STATUS": "present",
+      "workingHours": "2.22"
+    },
+    {
+      "id": 3,
+      "employeeId": 2,
+      "DATE": "2026-03-17T18:30:00.000Z",
+      "checkInTime": "2026-03-18T16:39:05.000Z",
+      "checkOutTime": "2026-03-18T16:39:07.000Z",
+      "STATUS": "present",
+      "workingHours": "0.85"
+    },
+    {
+      "id": 4,
+      "employeeId": 2,
+      "DATE": "2026-03-17T18:30:00.000Z",
+      "checkInTime": "2026-03-18T16:44:54.000Z",
+      "checkOutTime": "2026-03-18T16:45:01.000Z",
+      "STATUS": "checked-out",
+      "workingHours": "0.00"
+    },
+    {
+      "id": 5,
+      "employeeId": 1,
+      "DATE": "2026-03-17T18:30:00.000Z",
+      "checkInTime": "2026-03-18T16:44:55.000Z",
+      "checkOutTime": "2026-03-18T16:45:03.000Z",
+      "STATUS": "checked-out",
+      "workingHours": "0.00"
+    }
+  ]
+}
